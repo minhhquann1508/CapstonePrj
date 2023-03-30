@@ -203,6 +203,9 @@
 .business__header__desc {
     color: #5a5a5a;
 }
+.business__link {
+    text-decoration: none !important;
+}
 .business__item {
     padding: 32px 48px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.4);
