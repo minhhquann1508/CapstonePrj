@@ -1,0 +1,9 @@
+@media (max-width: 568px) {
+    .carousel__desc h1,
+    .business__header h2,
+    .about__text h4 {
+        font-size: 34px !important;
+    }
+}
+
+
