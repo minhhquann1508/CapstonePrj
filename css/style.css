@@ -7,6 +7,8 @@
     z-index: 99;
     width: 100%;
     background-color: #fff;
+    padding: 12px 0;
+    transition: 0.3s ease-in-out;
 }
 .navbar-brand i,
 .navbar-brand span {
@@ -344,6 +346,19 @@
 }
 .dark  #switchBtn .fa-sun{
     display: block;
+}
+.dark .dropdown-menu {
+    background-color: #151515;  
+}
+.dark .navbar-expand-lg .navbar-nav .dropdown-menu:before {
+    background-color: #151515 !important;
+}
+.dark .dropdown-item {
+    color: #fff !important;
+}
+.dark .dropdown-item:hover {
+    background-color: transparent !important;
+    color: #d62f58 !important;
 }
 .dark #navBtn {
     background: #ed456f;

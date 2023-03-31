@@ -2,11 +2,18 @@
 <html lang="en">
   <head>
     <title>Layout 2 - Masterwork</title>
+    <!-- Logo trên web -->
+    <link rel="shortcut icon" href="./img/logo_web.jpg" type="image/x-icon">
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Fancybox CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
     <!-- Thư viện animate -->
     <link
@@ -39,7 +46,7 @@
   <body id="myBody">
     <!-- Heading -->
     <header class="header">
-      <div class="container py-2">
+      <div class="container">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand d-block" href="#">
             <i class="fa-regular fa-handshake"></i>
@@ -60,7 +67,7 @@
                 <a class="nav-link" href="#">Services</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                   Pages
                 </a>
                 <div class="dropdown-menu">
@@ -175,7 +182,9 @@
             </div>
           </div>
           <div class="col-12 pt-5 pt-lg-0 col-lg-6 animate__animated animate__backInDown">
-            <img src="./img/about.jpg" class="img-fluid about__img" alt="" />
+            <a href="./img/about.jpg" class="d-block">
+              <img src="./img/about.jpg" class="img-fluid about__img" alt="" />
+            </a>
           </div>
         </div>
       </div>
@@ -252,6 +261,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- Fancybox JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <!--Thư viện wow  -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
