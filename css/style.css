@@ -1,6 +1,11 @@
 *{
     scroll-behavior: smooth;
 }
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
 .header {
     box-shadow: -1px 1px 4px rgba(0,0,0,0.4);
     position: fixed;
@@ -308,6 +313,61 @@
 .number__item p {
     color: #5a5a5a;
 }
+
+/* NEWS */
+
+.news{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    align-items: center;
+    min-height: 480px;
+}
+
+.news__content{
+    max-width: 550px;
+}
+
+.news__title h2{
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+
+.news__text p{
+    color: white;
+    line-height: 1.6;
+}
+
+.news__text button{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 13px 30px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .backToTopBtn {
     background-color: #d62f58;
     color: #fff;
