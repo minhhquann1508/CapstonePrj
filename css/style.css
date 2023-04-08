@@ -121,7 +121,6 @@
     color: #dc4f72;
     font-size: 14px;
     font-weight: 600;
-    margin-left: 14px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
@@ -138,6 +137,27 @@
 #navBtn:hover {
     background-color: #dc4f72;
     color: #fff;
+}
+#search {
+    width: 40px;
+    height: 40px;
+    padding: 0 !important;
+    text-align: center;
+    line-height: 40px;
+    background-color: #F7F9FC;
+    border-radius: 50%;
+    margin-right: 8px;
+    border: 1px solid #e7e7e7;
+}
+#search i{
+    color: #5a5a5a !important;
+    font-size: 17px;
+}
+#search.nav-item:hover i{
+    color: black !important;
+}
+#search.nav-item::after {
+    width: 0;
 }
 .carousel {
     background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(../img/banner.jpg);
@@ -364,8 +384,33 @@
     background: #ed456f;
     color: #fff;
 }
+.dark #search.nav-item {
+    background-color: #191c1d;
+    border: 1px solid #333;
+}
+.dark #search.nav-item i {
+    color: #b7b7b7 !important;
+} 
+.dark #search.nav-item:hover i {
+    color: #fff !important;
+}
 .dark #navBtn:hover {
     background-color: #d62f58;
+}
+.dark .carousel {
+    background: linear-gradient(to right,#131617 , rgba(255, 255, 255, 0.92)), url(../img/banner.jpg);
+    background-position: center;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    padding-top: 100px;
+}
+.dark .carousel__desc h1 {
+    color: #eee;
+}
+.dark .carousel__desc p{
+    color:#b7b7b7;
 }
 .dark .business__header h2,
 .dark .about__text h4 {
