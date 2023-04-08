@@ -12,6 +12,49 @@
     .nav-item:hover:after {
         width: 0 !important;
     }
-    
+}
+@media (min-width: 548px) and (max-width:990px) {
+    #switchBtn {
+        position: absolute;
+        right: 10%;
+        margin: 0 14px;
+        top: 22px;
+    }
+    #switchBtn .fa-moon {
+       position: absolute;
+       left: -10px;
+    }
+}
+@media (min-width: 420px) and (max-width:547px) {
+    #switchBtn {
+        position: absolute;
+        right: 10%;
+        margin: 0 14px;
+        top: 22px;
+    }
+    #switchBtn .fa-moon {
+       position: absolute;
+       left: -20px;
+    }
+    #switchBtn .fa-sun {
+       position: absolute;
+       left: -30px;
+    }
+}
+@media (min-width: 0) and (max-width:419px) {
+    #switchBtn {
+        position: absolute;
+        right: 10%;
+        margin: 0 14px;
+        top: 22px;
+    }
+    #switchBtn .fa-moon {
+       position: absolute;
+       left: -30px;
+    }
+    #switchBtn .fa-sun {
+        position: absolute;
+        left: -40px;
+     }
 }
 
