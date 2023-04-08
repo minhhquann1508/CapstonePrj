@@ -131,6 +131,8 @@
     height: 40px;
     line-height: 40px;
 }
+.navbar-toggler .fa-xmark {
+}
 .navbar-toggler-icon {
     color: #fff;
 }
