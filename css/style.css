@@ -370,9 +370,17 @@ body{
 }
 
 
+/* Questions */
 
+.questions__title h3{
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1;
+}
 
-
+.questions__title p{
+    color: #5a5a5a;
+}
 
 
 
