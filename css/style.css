@@ -372,6 +372,10 @@ body{
 
 /* Questions */
 
+.questions{
+    background-color: #F7F9FC;
+}
+
 .questions__title h3{
     font-size: 46px;
     font-weight: 700;
@@ -382,7 +386,34 @@ body{
     color: #5a5a5a;
 }
 
+.questions__img img{
+    border-radius: 6px;
+    transition: all .5s;
+}
 
+.questions__img img:hover{
+    transform: translateY(-.5rem);
+}
+
+.questions__content ul{
+    list-style: none;
+    padding: 0;
+}
+
+.questions__content ul li{
+    padding: 25px 50px 25px 20px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.questions__content h2{
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 400;
+    margin: 0;
+    cursor: pointer;
+}
 
 
 
