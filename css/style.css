@@ -8,7 +8,7 @@ body{
 }
 
 .header {
-    box-shadow: -1px 1px 4px rgba(0,0,0,0.4);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -596,22 +596,19 @@ ul , ol{
 /* Tạo dark theme */
 .dark#myBody,
 .dark .about,
-.dark .header,
 .dark .number,
 .dark .news,
 .dark .questions
 {
     background-color: #222;
 }
+.dark .header,
 .dark .business,
 .dark .feature,
 .dark .feature__tab li,
 .dark .resp-tabs-container{
     background-color: #131617;
 
-}
-.dark .header {
-    box-shadow: 1px -1px 4px rgba(255, 255, 255, 0.5);
 }
 .dark .nav-link {
     color: #fff;
