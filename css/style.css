@@ -19,6 +19,13 @@ body{
 .clear {
     clear: both;
 }
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+
 ul , ol{
     padding: 0;
     margin: 0;
@@ -386,7 +393,7 @@ ul , ol{
 .news__text button{
     font-size: 14px;
     text-transform: uppercase;
-    padding: 13px 30px;
+    padding: 15px 30px;
     font-weight: 700;
 }
 
@@ -405,6 +412,10 @@ ul , ol{
 
 .questions__title p{
     color: #5a5a5a;
+}
+.questions__img{
+    position: sticky;
+    top: 80px;
 }
 
 .questions__img img{
@@ -435,6 +446,12 @@ ul , ol{
     left: 0;
     cursor: pointer;    
 }
+.questions__content ul li input[type=checkbox]:checked ~p{
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0,50%);
+}
 
 .questions__content h2{
     font-size: 20px;
@@ -458,16 +475,31 @@ ul , ol{
     background-color: black;
     width: 3px;
     height: 9px;
+    transition: all .25s ease-in-out;
 }
 
 .questions__content ul li i::before{
-    transform: translate(2px,0) rotate(45deg);
+    transform: translate(-2px,0) rotate(45deg);
 }
-
+.questions__content ul li input[type=checkbox]:checked ~ i::before{
+    transform: translate(2px, 0) rotate(45deg);
+}
+.questions__content ul li input[type=checkbox]:checked ~ i::after{
+    transform: translate(-2px, 0) rotate(-45deg);
+}
 .questions__content ul li i::after{
-    transform: translate(-2px,0) rotate(-45deg);
+    transform: translate(2px,0) rotate(-45deg);
 }
 
+.questions__content p{
+    color: #5a5a5a;
+    position: relative;
+    margin-top: 14px;
+    max-height: 800px;
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: all .25s ease-in-out;
+}
 
 /* FEATURE */
 .feature{
@@ -493,6 +525,8 @@ ul , ol{
     float: left;
     width: calc(100%/3);
     text-align: center;
+    background-color: white ;
+    border-bottom: 3px solid #f8f9fa;
 }
 
 .feature__content{
@@ -556,7 +590,12 @@ ul , ol{
 .dark#myBody,
 .dark .about,
 .dark .header,
-.dark .number  {
+.dark .number,
+.dark .news,
+.dark .questions,
+.dark .feature,
+.dark .resp-tabs-container,
+.dark .feature__tab li{
     background-color: #222;
 }
 .dark .header {
@@ -610,23 +649,38 @@ ul , ol{
     position: relative;
     padding-top: 100px;
 }
-.dark .carousel__desc h1 {
+.dark .carousel__desc h1,
+.dark .questions__content h2,
+.dark .feature__title h3,
+.dark .feature__tab li,
+.dark .feature__content h3
+{
     color: #eee;
 }
-.dark .carousel__desc p{
+.dark .questions__content ul li i::before ,
+.dark .questions__content ul li i::after{
+    background-color: #eee;
+}
+.dark .carousel__desc p,
+.dark .questions__content p,
+.dark .feature__content p{
     color:#b7b7b7;
 }
 .dark .business__header h2,
-.dark .about__text h4 {
+.dark .about__text h4, .dark .questions__title h3 {
     color: #ddd;
 }
 .dark .business__header__desc,
-.dark  .about__text p{
+.dark  .about__text p,
+.dark .questions__title p,
+.dark .feature__title p 
+{
     color:#afafaf;
 }
 .dark .business__item ,
-.dark .number__item{
+.dark .number__item, .dark .questions__content ul li{
     background-color: #151515;
+    border: 1px solid #333;
 }
 .dark .business__item h3 ,
 .dark .number__item h4{
@@ -637,3 +691,6 @@ ul , ol{
     color: #afafaf;
 }
 
+.dark .feature__tab li {
+    border-bottom: 3px solid #333;
+}

@@ -58,3 +58,38 @@
      }
 }
 
+@media (min-width: 576px) {
+    .container {
+      max-width: 100%;
+      padding-right: 30px;
+      padding-left: 30px;
+      margin-right: auto;
+      margin-left: auto; } }
+  
+@media (min-width: 768px) {
+    .container {
+      max-width: 100%;
+      padding-right: 25px;
+      padding-left: 25px;
+      margin-right: auto;
+      margin-left: auto; } }
+  
+@media (min-width: 992px) {
+    .container {
+      max-width: 100%;
+      padding-right: 25px;
+      padding-left: 25px;
+      margin-right: auto;
+      margin-left: auto; } }
+  
+@media (min-width: 1200px) {
+    .container {
+      max-width: 100%;
+      padding-right: 25px;
+      padding-left: 25px;
+      margin-right: auto;
+      margin-left: auto; } }
+  
+@media (min-width: 1280px) {
+    .container {
+      max-width: 1200px; } }

@@ -335,14 +335,14 @@
         <div class="row mt-5">
           <div class="col-lg-10 mx-auto">
             <div id="horizontalTab">
-              <ul class="feature__tab resp-tabs-list">
+              <ul class="feature__tab resp-tabs-list hor_1">
                 <li>Project One</li>
                 <li>Project Two</li>
                 <li>Project Three</li>
                 <div class="clear"></div>
               </ul>
 
-              <div class="resp-tabs-container">
+              <div class="resp-tabs-container hor_1">
                 <div class="feature__content">
                   <div class="row">
                     <div class="col-md-6">
@@ -436,14 +436,23 @@
     <!-- Easy responsive tab Lib  -->
     <script src="./js/easy-responsive-tabs.js"></script>
     <script>
+      
+    $(document).ready(function () {
+      //Horizontal Tab
       $('#horizontalTab').easyResponsiveTabs({
-        type:'default', 
-        width: 'auto',
-        fit:true, 
-        closed:'accordion',
-        activate:function(){}
+        type: 'default', //Types: default, vertical, accordion
+        width: 'auto', //auto or any width like 600px
+        fit: true, // 100% fit in a container
+        tabidentify: 'hor_1', // The tab groups identifier
+        activate: function (event) { // Callback function if tab is switched
+          var $tab = $(this);
+          var $info = $('#nested-tabInfo');
+          var $name = $('span', $info);
+          $name.text($tab.text());
+          $info.show();
+        }
       });
-
+  });
 
     </script>
     <!-- File main.js -->
