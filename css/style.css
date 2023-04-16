@@ -245,7 +245,7 @@ ul , ol{
     color: #dc4f72;
     font-size: 17px;
     line-height: 20px;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
@@ -403,6 +403,10 @@ ul , ol{
 .questions{
     background-color: #F7F9FC;
 }
+.questions__title{
+    max-width: 750px;
+    margin: 0 auto;
+}
 
 .questions__title h3{
     font-size: 46px;
@@ -505,7 +509,10 @@ ul , ol{
 .feature{
     background-color: white;
 }
-
+.feature__title{
+    max-width: 750px;
+    margin: 0 auto;
+}
 .feature__title h3{
     font-size: 46px;
     font-weight: 700;
@@ -592,11 +599,16 @@ ul , ol{
 .dark .header,
 .dark .number,
 .dark .news,
-.dark .questions,
-.dark .feature,
-.dark .resp-tabs-container,
-.dark .feature__tab li{
+.dark .questions
+{
     background-color: #222;
+}
+.dark .business,
+.dark .feature,
+.dark .feature__tab li,
+.dark .resp-tabs-container{
+    background-color: #131617;
+
 }
 .dark .header {
     box-shadow: 1px -1px 4px rgba(255, 255, 255, 0.5);
@@ -694,3 +706,5 @@ ul , ol{
 .dark .feature__tab li {
     border-bottom: 3px solid #333;
 }
+
+
