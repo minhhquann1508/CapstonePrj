@@ -365,7 +365,7 @@ ul , ol{
 /* NEWS */
 
 .news{
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/bg.jpg);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(../img/bg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
